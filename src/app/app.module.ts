@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { jqxGridModule } from 'jqwidgets-ng/jqxgrid';
+import{ jqxSchedulerModule } from 'jqwidgets-ng/jqxscheduler';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -10,9 +11,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    jqxGridModule,
+    jqxSchedulerModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ AppComponent ]
 })
 export class AppModule { }
